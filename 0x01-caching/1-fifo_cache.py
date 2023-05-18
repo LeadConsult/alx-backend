@@ -10,6 +10,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 class FIFOCache(BaseCaching):
     def __init__(self):
         super().__init__()
+        self.key_indexes = []
 
     def put(self, key, item):
         """
